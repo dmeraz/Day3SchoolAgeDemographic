@@ -17,46 +17,48 @@ namespace ConsoleApplication1
             using (StreamReader reader = File.OpenText(args[0]))
                 while (!reader.EndOfStream)
                 {
-                    string userAge = reader.ReadLine();
-                    if (null == userAge)
+                    string line = reader.ReadLine();
+                    if (null == line)
                         continue;
                 }
 
-            if (userAge >= 0 && userAge <= 2)
+            //Had to change userAge to line for CodeEval
+
+            if (line >= 0 && line <= 2)
             {
-                Console.WriteLine("Still in Mama's Arms");
+                System.Console.WriteLine("Still in Mama's Arms");
             }
-            else if (userAge >= 3 && userAge <= 4)//May also be written (userAge == 3 || userAge == 4)
+            else if (line >= 3 && line <= 4)//May also be written (line == 3 || line == 4)
             {
-                Console.WriteLine("Preschool Maniac");
+                System.Console.WriteLine("Preschool Maniac");
             }
-            else if (userAge >= 5 && userAge <= 11)
+            else if (line >= 5 && line <= 11)
             {
-                Console.WriteLine("Elementary School");
+                System.Console.WriteLine("Elementary School");
             } 
-            else if (userAge >= 12 && userAge <= 14)
+            else if (line >= 12 && line <= 14)
             {
-                Console.WriteLine("Middle School");
+                System.Console.WriteLine("Middle School");
             }
-            else if (userAge >= 15 && userAge <= 18)
+            else if (line >= 15 && line <= 18)
             {
-                Console.WriteLine("High School");
+                System.Console.WriteLine("High School");
             }
-            else if (userAge >= 19 && userAge <= 22)
+            else if (line >= 19 && line <= 22)
             {
-                Console.WriteLine("College");
+                System.Console.WriteLine("College");
             }
-            else if (userAge >= 23 && userAge <= 65)
+            else if (line >= 23 && line <= 65)
             {
-                Console.WriteLine("Working for the Man");
+                System.Console.WriteLine("Working for the Man");
             }
-            else if (userAge >= 66 && userAge <= 100)
+            else if (line >= 66 && line <= 100)
             {
-                Console.WriteLine("The Golden Years");
+                System.Console.WriteLine("The Golden Years");
             }
-            else if (userAge <= 0 && userAge >= 100)
+            else if (line <= 0 && line >= 100)
             {
-                Console.WriteLine("This program is for humans.");
+                System.Console.WriteLine("This program is for humans.");
             }
         }
     }
