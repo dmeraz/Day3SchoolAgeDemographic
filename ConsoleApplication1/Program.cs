@@ -10,9 +10,17 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your age.");
+            //Console.WriteLine("Please enter your age.");
 
-            int userAge = int.Parse(Console.ReadLine());
+            //int userAge = int.Parse(Console.ReadLine());
+
+            using (StreamReader reader = File.OpenText(args[0]))
+                while (!reader.EndOfStream)
+                {
+                    string userAge = reader.ReadLine();
+                    if (null == userAge)
+                        continue;
+                }
 
             if (userAge >= 0 && userAge <= 2)
             {
