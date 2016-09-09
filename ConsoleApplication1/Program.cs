@@ -20,46 +20,46 @@ namespace ConsoleApplication1
                     string line = reader.ReadLine();
                     if (null == line)
                         continue;
+
+                    System.int userAge = System.int.Parse(line);
+
+                    if (userAge >= 0 && userAge <= 2)
+                    {
+                        System.Console.WriteLine("Still in Mama's Arms");
+                    }
+                    else if (userAge >= 3 && userAge <= 4)//May also be written (userAge == 3 || userAge == 4)
+                    {
+                        System.Console.WriteLine("Preschool Maniac");
+                    }
+                    else if (userAge >= 5 && userAge <= 11)
+                    {
+                        System.Console.WriteLine("Elementary School");
+                    }
+                    else if (userAge >= 12 && userAge <= 14)
+                    {
+                        System.Console.WriteLine("Middle School");
+                    }
+                    else if (userAge >= 15 && userAge <= 18)
+                    {
+                        System.Console.WriteLine("High School");
+                    }
+                    else if (userAge >= 19 && userAge <= 22)
+                    {
+                        System.Console.WriteLine("College");
+                    }
+                    else if (userAge >= 23 && userAge <= 65)
+                    {
+                        System.Console.WriteLine("Working for the Man");
+                    }
+                    else if (userAge >= 66 && userAge <= 100)
+                    {
+                        System.Console.WriteLine("The Golden Years");
+                    }
+                    else if (userAge <= 0 && userAge >= 100)
+                    {
+                        System.Console.WriteLine("This program is for humans.");
+                    }
                 }
-
-            //Had to change userAge to line for CodeEval
-
-            if (line >= 0 && line <= 2)
-            {
-                System.Console.WriteLine("Still in Mama's Arms");
-            }
-            else if (line >= 3 && line <= 4)//May also be written (line == 3 || line == 4)
-            {
-                System.Console.WriteLine("Preschool Maniac");
-            }
-            else if (line >= 5 && line <= 11)
-            {
-                System.Console.WriteLine("Elementary School");
-            } 
-            else if (line >= 12 && line <= 14)
-            {
-                System.Console.WriteLine("Middle School");
-            }
-            else if (line >= 15 && line <= 18)
-            {
-                System.Console.WriteLine("High School");
-            }
-            else if (line >= 19 && line <= 22)
-            {
-                System.Console.WriteLine("College");
-            }
-            else if (line >= 23 && line <= 65)
-            {
-                System.Console.WriteLine("Working for the Man");
-            }
-            else if (line >= 66 && line <= 100)
-            {
-                System.Console.WriteLine("The Golden Years");
-            }
-            else if (line <= 0 && line >= 100)
-            {
-                System.Console.WriteLine("This program is for humans.");
-            }
         }
     }
 }
