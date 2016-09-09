@@ -25,7 +25,7 @@ namespace ConsoleApplication1
             else if (userAge >= 5 && userAge <= 11)
             {
                 Console.WriteLine("Elementary School");
-            }
+            } 
             else if (userAge >= 12 && userAge <= 14)
             {
                 Console.WriteLine("Middle School");
